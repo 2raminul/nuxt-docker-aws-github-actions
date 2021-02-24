@@ -15,4 +15,4 @@ sudo npm run build
 #echo "Run new PM2 action"
 #sudo npm run start
 #sudo cp /home/ubuntu/ecosystem.json ecosystem.json
-sudo pm2 start
+#sudo pm2 start
