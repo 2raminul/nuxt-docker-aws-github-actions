@@ -1,5 +1,5 @@
 echo "Kill all the running PM2 actions"
-sudo pm2 kill
+#sudo pm2 kill
 
 echo "Jump to app folder"
 cd /home/ubuntu/nuxt-docker-aws-github-actions
