@@ -3,12 +3,15 @@
 
 echo "Jump to app folder"
 cd /home/ubuntu
+echo pwd
 #sudo docker-compose down
 
 echo "Update app from Git"
-git pull origin 
-sudo npm install
-sudo npm run build
+
+#git pull origin 
+#sudo npm install
+#sudo npm run build
+
 #sudo docker-compose up --build 
 #&& sudo docker-compose up
 
