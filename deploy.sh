@@ -12,7 +12,6 @@ sudo npm run build
 #sudo docker-compose up --build 
 #&& sudo docker-compose up
 
-
 echo "Run new PM2 action"
 sudo cp /home/ubuntu/ecosystem.json ecosystem.json
 sudo pm2 start
