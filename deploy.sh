@@ -3,7 +3,7 @@
 
 echo "Jump to app folder"
 cd /home/ubuntu
-echo pwd
+pwd
 #sudo docker-compose down
 
 echo "Update app from Git"
