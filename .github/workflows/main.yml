@@ -18,10 +18,19 @@ jobs:
     name: master
     runs-on: ubuntu-latest
     steps:
-      - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.AWS_HOST }}
-          username: ${{ secrets.AWS_USER }}
-          key: ${{ secrets.AWS_KEY }}
-          script: sh deploy.sh
+       - name: executing remote ssh commands using password 
+         uses: appleboy/ssh-action@master 
+         with: 
+           host: ${{ secrets.HOST }} 
+           username: ${{ secrets.AWS_USER }} 
+           password: ${{ secrets.PASSWORD }} 
+           script: whoami 
+
+       - name: executing remote ssh commands using ssh key 
+         uses: appleboy/ssh-action@master 
+         with: 
+           host: ${{ secrets.HOST }} 
+           username: ${{ secrets.AWS_USER }} 
+           key: ${{ secrets.AWS_KEY }} 
+           script: sh deploy.sh           
+      
