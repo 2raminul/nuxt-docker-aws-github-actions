@@ -1,0 +1,16 @@
+{
+    "apps" : [
+       {
+          "name"          : "nuxt-docker-aws-github-actions",
+          "script"        : "npm",
+          "args"          : "start",
+          "watch"         : false,
+          "cwd"           : "/home/ubuntu/nuxt-docker-aws-github-actions/",
+          "out_file"      : "/home/ubuntu/hooker.out.log",
+          "err_file"      : "/home/ubuntu/hooker.err.log",
+          "merge_logs"    : true,
+          "instances"     : "max",
+          "exec_mode"     : "cluster"
+       }
+    ]
+  }
