@@ -2,7 +2,7 @@
 #sudo pm2 kill
 
 echo "Jump to app folder"
-cd /home/ubuntu/nuxt-docker-aws-github-actions
+cd /home/ubuntu
 #sudo docker-compose down
 
 echo "Update app from Git"
