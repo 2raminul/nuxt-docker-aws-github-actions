@@ -6,6 +6,7 @@ WORKDIR /app
 COPY package*.json yarn.lock ./
 COPY tsconfig.json ./
 #COPY .env ./
+RUN npm install
 RUN yarn install
 RUN yarn build
 #RUN yarn add global nuxt
