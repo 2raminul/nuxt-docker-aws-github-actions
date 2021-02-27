@@ -1,8 +1,6 @@
 FROM node:13.8-alpine
 # RUN apk add python
-#RUN apk add python make g ++
-
-   
+#RUN apk add python make g ++   
 
 WORKDIR /app
 COPY package*.json yarn.lock ./
