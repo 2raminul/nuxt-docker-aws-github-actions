@@ -24,6 +24,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
+    - run: yarn build
     - run: docker-compose down
     - run: docker-compose up --build -d
     #- run: npm install

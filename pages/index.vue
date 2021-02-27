@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        Hello World Aminul
+        Sample test
       </h1>
       <div class="links">
         <a
