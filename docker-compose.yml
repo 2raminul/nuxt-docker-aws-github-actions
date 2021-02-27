@@ -31,4 +31,5 @@ services:
   #   web-root
 networks:
   owner_crm_server_owner-crm:
-    external: true
+    #external: true
+    driver: bridge
