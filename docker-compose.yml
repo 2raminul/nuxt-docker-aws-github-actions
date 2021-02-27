@@ -14,19 +14,19 @@ services:
       #HOST: 127.0.0.1
     networks:
       - owner_crm_server_owner-crm
-  web-server:
-    image: nginx:1.17.10-alpine
-    container_name: web-server
-    volumes:
-      - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
-      - .:/var/www/mynginxserver
-    ports:
-      - 80:80
-    networks:
-      - owner_crm_server_owner-crm
-    depends_on: 
-      - owner_crm_client
-    restart: unless-stopped
+  #web-server:
+    #image: nginx:1.17.10-alpine
+    #container_name: web-server
+    #volumes:
+     # - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      #- .:/var/www/mynginxserver
+    #ports:
+     # - 80:80
+    #networks:
+     # - owner_crm_server_owner-crm
+    #depends_on: 
+     # - owner_crm_client
+    #restart: unless-stopped
   # volumes: 
   #   web-root
 networks:
