@@ -17,4 +17,4 @@ RUN node_modules/.bin/nuxt-ts build
 #EXPOSE 3001
 
 #CMD [ "npm", "run", "build" ]
-CMD ["yarn","dev"]
+CMD ["yarn","start"]
