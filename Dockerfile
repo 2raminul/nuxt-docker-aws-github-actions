@@ -7,7 +7,7 @@ FROM node:13.8-alpine
 WORKDIR /app
 COPY package*.json yarn.lock ./
 COPY tsconfig.json ./
-COPY .env ./
+#COPY .env ./
 RUN yarn install
 RUN yarn build
 #RUN yarn add global nuxt
